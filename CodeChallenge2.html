@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Mask with jQuery</title>
+    <link rel="stylesheet" type="text/css" href="./css/cc2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+    <script src="./js/inputmask.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <img class="top-left" src="css/CodeQuadrant_Logo-removebg-preview.png">
+    <div class="cards-list">
+
+
+        <div class="card 4">
+            <div class="inputFields">
+                <label for="cc">Credit Card</label>
+                <!-- Set via HTML -->
+                <input id="cc" type="text" data-inputmask="'mask': '9999 9999 9999 9999'" />
+            </div>
+
+            <div>
+                <label for="date">Date</label>
+                <input id="date" data-inputmask="'alias': 'date'" />
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <!-- or set via JS -->
+                <input id="phone" type="text" inputmask="'alias': 'phone'" />
+            </div>
+
+
+            <div>
+                <label for="curr">Currency</label>
+
+                <input data-inputmask="'alias': 'currency'" />
+            </div>
+
+            <div>
+                <label for="ssn">Social Security</label>
+                <!-- Set via HTML -->
+                <input id="ssn" type="text" />
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
