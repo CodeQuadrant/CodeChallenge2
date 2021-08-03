@@ -1,0 +1,91 @@
+input {
+    font-family: Josefin Sans;
+    margin-left: 20%;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img.top-left {
+    max-width: 215px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+label {
+    display: block;
+    margin-left: 20%;
+    color: white;
+}
+
+div {
+    margin: 0 0 1rem 0;
+}
+
+.inputFields {
+    padding-top: 2rem;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px auto;
+    width: 300px;
+    height: 320px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #273751
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.title-white {
+    color: white;
+}
+
+.title-black {
+    color: black;
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
